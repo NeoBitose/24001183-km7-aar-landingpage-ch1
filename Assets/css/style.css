@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    border-radius: 2px;
+}
+
+.contains {
+    width: calc(100vw - 5vw);
+    margin: auto;
+}
+
+@media(min-width:426px) {
+    .contains {
+        width: calc(100vw - 20vw);
+    }
+}
+
+.logo-box {
+    width: 100px;
+    height: 34px;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 400;
+}
+
+.img-hero{
+    padding: 2vh 0 0 5vw;
+    position: relative;
+    right: 0;
+}
+
+.desc-content {
+    padding: 0 5vw 0 5vw;
+}
+
+.desc-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 16px;
+    width: 75%;
+}
+
+.desc-content p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+@media(min-width:426px) {
+    .desc-hero {
+        width: 50%;
+    }
+
+    .img-hero {
+        width: 50%;
+        padding-left: 5vh 0 0 0;
+    }
+
+    .desc-content {
+        padding: 0vw 0 0vw 10vw;
+    }
+
+    .desc-content h1{
+        width: 100%;
+    }
+
+    .desc-content p {
+        width: 75%;
+    }
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/kiri.png);
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/kanan.png);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 60px;
+    height: 65px;
+}
