@@ -18,6 +18,17 @@
     }
 }
 
+.offcanvas.offcanvas-end{
+    width: 50%;
+}
+
+@media(max-width:425px){
+    .nav-mobile{
+        width: calc(100vw - 10vw);
+        margin: 0 auto;
+    }
+}
+
 .logo-box {
     width: 100px;
     height: 34px;
@@ -58,7 +69,7 @@
 
     .img-hero {
         width: 50%;
-        padding-left: 5vh 0 0 0;
+        padding: 2vh 0 0 2vw;
     }
 
     .desc-content {
