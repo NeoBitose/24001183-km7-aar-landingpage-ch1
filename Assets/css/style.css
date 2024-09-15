@@ -9,8 +9,12 @@ body {
     scroll-behavior: smooth;
 }
 
-p{
+p {
     font-size: 14px;
+}
+
+.why-us h4 {
+    font-size: 24px;
 }
 
 .btn {
@@ -97,14 +101,14 @@ p{
 
 /* Service */
 .service {
-    padding: 10vh 2vw;
+    padding: 10vh 2vw 5vh 2vw;
 }
 
 .img-service {
     width: 75%;
 }
 
-.desc-service-content h1 {
+.desc-service-content h4 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 16px;
@@ -117,7 +121,7 @@ p{
 
 @media(min-width:426px) {
     .service {
-        padding: 10vh 0;
+        padding: 10vh 0 5vh 0;
         width: 70%;
     }
 
@@ -129,7 +133,7 @@ p{
         width: 50%;
     }
 
-    .desc-service-content{
+    .desc-service-content {
         width: 90%;
     }
 
@@ -137,15 +141,22 @@ p{
 
 /* Why Us */
 
-.why-us{
-    padding: 10vh 2vw;
+.why-us {
+    padding: 5vh 2vw;
 }
 
-.why-us h4{
-    font-size: 24px;
+@media(min-width:446px) {
+    .why-us {
+        padding: 5vh 0vw;
+    }
 }
 
 /* Testimonial */
+.carousel-item p{
+    width: 120%;
+    position: relative;
+    left: -10%;
+}
 
 .carousel-control-prev-icon {
     background-image: url(../img/kiri.png);
@@ -158,6 +169,36 @@ p{
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     display: inline-block;
-    width: 60px;
-    height: 65px;
+    width: 30px;
+    height: 31px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: 20%;
+    align-items: start;
+}
+
+@media(min-width:446px) {
+    .carousel {
+        width: 72%;
+        margin: auto;
+    }
+
+    .carousel-item p{
+        width: 100%;
+        position: static;
+        left: 0;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 60px;
+        height: 65px;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        top: 0;
+        align-items: center;
+    }
 }
