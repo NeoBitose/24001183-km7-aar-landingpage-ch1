@@ -1,6 +1,12 @@
+/* component */
 * {
     margin: 0;
     padding: 0;
+    font-family: Helvetica;
+}
+
+body {
+    scroll-behavior: smooth;
 }
 
 .btn {
@@ -18,12 +24,16 @@
     }
 }
 
-.offcanvas.offcanvas-end{
-    width: 50%;
+@media(min-width:1441px) {
+    .contains {
+        width: calc(100vw - 30vw);
+    }
 }
 
-@media(max-width:425px){
-    .nav-mobile{
+/* Navigation */
+
+@media(max-width:425px) {
+    .nav-mobile {
         width: calc(100vw - 10vw);
         margin: 0 auto;
     }
@@ -34,30 +44,26 @@
     height: 34px;
 }
 
-.nav-link {
-    color: black;
-    font-weight: 400;
-}
+/* Hero */
 
-.img-hero{
-    padding: 2vh 0 0 5vw;
+.img-hero {
+    padding: 3vh 0 0 5vw;
     position: relative;
     right: 0;
 }
 
-.desc-content {
+.desc-hero-content {
     padding: 0 5vw 0 5vw;
 }
 
-.desc-content h1 {
+.desc-hero-content h1 {
     font-size: 36px;
     font-weight: 700;
     line-height: 54px;
     margin-bottom: 16px;
-    width: 75%;
 }
 
-.desc-content p {
+.desc-hero-content p {
     font-size: 14px;
     margin-bottom: 16px;
 }
@@ -72,18 +78,62 @@
         padding: 2vh 0 0 2vw;
     }
 
-    .desc-content {
-        padding: 0vw 0 0vw 10vw;
+    .desc-hero-content {
+        padding: 0 0 0 10vw;
     }
 
-    .desc-content h1{
-        width: 100%;
-    }
-
-    .desc-content p {
-        width: 75%;
+    .desc-hero-content p {
+        width: 80%;
     }
 }
+
+@media(min-width:1441px) {
+    .desc-content {
+        padding: 0vw 0 0vw 15vw;
+    }
+}
+
+/* Service */
+.service {
+    padding: 10vh 2.5vw;
+}
+
+.img-service {
+    width: 75%;
+}
+
+.desc-service-content h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+.desc-service-content p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+@media(min-width:426px) {
+    .service {
+        padding: 10vh 0;
+        width: 70%;
+    }
+
+    .img-service {
+        width: 50%;
+    }
+
+    .desc-service {
+        width: 50%;
+    }
+
+    .desc-service-content{
+        width: 90%;
+    }
+
+}
+
+/* Testimonial */
 
 .carousel-control-prev-icon {
     background-image: url(../img/kiri.png);
