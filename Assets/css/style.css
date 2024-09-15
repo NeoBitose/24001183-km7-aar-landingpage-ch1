@@ -9,6 +9,10 @@ body {
     scroll-behavior: smooth;
 }
 
+p{
+    font-size: 14px;
+}
+
 .btn {
     border-radius: 2px;
 }
@@ -60,11 +64,9 @@ body {
     font-size: 36px;
     font-weight: 700;
     line-height: 54px;
-    margin-bottom: 16px;
 }
 
 .desc-hero-content p {
-    font-size: 14px;
     margin-bottom: 16px;
 }
 
@@ -95,7 +97,7 @@ body {
 
 /* Service */
 .service {
-    padding: 10vh 2.5vw;
+    padding: 10vh 2vw;
 }
 
 .img-service {
@@ -131,6 +133,16 @@ body {
         width: 90%;
     }
 
+}
+
+/* Why Us */
+
+.why-us{
+    padding: 10vh 2vw;
+}
+
+.why-us h4{
+    font-size: 24px;
 }
 
 /* Testimonial */
