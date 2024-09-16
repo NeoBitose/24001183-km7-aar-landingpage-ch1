@@ -255,3 +255,39 @@ p {
         margin: 0 auto;
     }
 }
+
+/* Faq */
+
+.faq {
+    padding: 5vh 2vw;
+}
+
+.faq-content{
+    width: 100%;
+}
+
+.title-faq, .accord-faq {
+    width: 100%;
+}
+
+.accordion-button{
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.accordion-item{
+    border: none;
+}
+
+.accordion-button::after{
+    border: 2px;
+}
+
+@media(min-width:426px) {
+    .faq {
+        padding: 5vh 0vw;
+    }
+    .title-faq, .accord-faq {
+        width: 500%;
+    }
+}
