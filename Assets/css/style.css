@@ -39,17 +39,16 @@ p {
 }
 
 /* Navigation */
+.logo-box {
+    width: 100px;
+    height: 34px;
+}
 
-@media(max-width:425px) {
+@media(max-width:990px) {
     .nav-mobile {
         width: calc(100vw - 10vw);
         margin: 0 auto;
     }
-}
-
-.logo-box {
-    width: 100px;
-    height: 34px;
 }
 
 /* Hero */
@@ -75,6 +74,20 @@ p {
 }
 
 @media(min-width:426px) {
+    .img-hero {
+        padding: 2vh 0 0 10vw;
+    }
+
+    .desc-hero-content {
+        padding: 5vh 10vw 0 10vw;
+    }
+
+    .desc-hero-content p {
+        width: 80%;
+    }
+}
+
+@media(min-width:991px) {
     .desc-hero {
         width: 50%;
     }
@@ -82,14 +95,6 @@ p {
     .img-hero {
         width: 50%;
         padding: 2vh 0 0 2vw;
-    }
-
-    .desc-hero-content {
-        padding: 0 0 0 10vw;
-    }
-
-    .desc-hero-content p {
-        width: 80%;
     }
 }
 
@@ -126,6 +131,11 @@ p {
 @media(min-width:426px) {
     .service {
         padding: 10vh 0 5vh 0;
+    }
+}
+
+@media(min-width:991px) {
+    .service {
         width: 70%;
     }
 
@@ -140,7 +150,6 @@ p {
     .desc-service-content {
         width: 90%;
     }
-
 }
 
 @media(min-width:1441px) {
@@ -199,12 +208,12 @@ p {
     }
 
     .carousel {
-        width: 72%;
+        width: 100%;
         margin: auto;
     }
 
     .carousel-item p {
-        width: 100%;
+        width: 150%;
         position: static;
         left: 0;
     }
@@ -220,6 +229,17 @@ p {
     .carousel-control-prev {
         top: 0;
         align-items: center;
+    }
+}
+
+@media(min-width:991px) {
+    .carousel {
+        width: 72%;
+        margin: auto;
+    }
+
+    .carousel-item p {
+        width: 100%;
     }
 }
 
@@ -274,24 +294,25 @@ p {
     padding: 5vh 2vw;
 }
 
-.faq-content{
+.faq-content {
     width: 100%;
 }
 
-.title-faq, .accord-faq {
+.title-faq,
+.accord-faq {
     width: 100%;
 }
 
-.accordion-button{
+.accordion-button {
     border: 1px solid lightgray;
     border-radius: 2px;
 }
 
-.accordion-item{
+.accordion-item {
     border: none;
 }
 
-.accordion-button::after{
+.accordion-button::after {
     border: 2px;
 }
 
@@ -299,9 +320,11 @@ p {
     .faq {
         padding: 5vh 0vw;
     }
+
     .title-faq {
         width: 40%;
     }
+
     .accord-faq {
         width: 60%;
     }
@@ -313,7 +336,7 @@ p {
     padding: 5vh 2vw;
 }
 
-.footer ul{
+.footer ul {
     list-style-type: none;
 }
 
